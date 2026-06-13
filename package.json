@@ -1,0 +1,34 @@
+{
+  "name": "automationexercise-playwright-sqa-framework",
+  "version": "1.0.0",
+  "description": "Hybrid UI and API SQA automation framework using Playwright, TypeScript, POM, reports, and CI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --project=chromium --project=firefox",
+    "test:api": "playwright test --project=api",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:defects": "cross-env DEFECT_DEMO=true playwright test tests/defect-demo/defect-demo.ui.spec.ts --project=chromium --headed --workers=1",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://automationexercise.com"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "sqa",
+    "automation",
+    "e2e",
+    "api-testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@types/node": "latest",
+    "cross-env": "latest",
+    "typescript": "latest"
+  }
+}
