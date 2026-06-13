@@ -53,87 +53,21 @@ API Tests
 - API-010: Verify missing login parameters error
 - API-011: Create and delete user account
 
-## Test Execution Count
+Test Execution Count
 
 - 16 UI test cases x 2 browsers = 32 UI test executions
 - 11 API test cases x 1 API project = 11 API tests
 - Total = 43 automated test executions
 
-## Install
-
-```bash
 npm install
 npx playwright install
-```
-
-## Run Tests
-
-Run all tests:
-
-```bash
 npm test
-```
-
-Run UI tests only:
-
-```bash
 npm run test:ui
-```
-
-Run API tests only:
-
-```bash
 npm run test:api
-```
-
-Run smoke tests:
-
-```bash
 npm run test:smoke
-```
-
-Run regression tests:
-
-```bash
 npm run test:regression
-```
-
-Run headed mode:
-
-```bash
 npm run test:headed
-```
-
-Open HTML report:
-
-```bash
-npm run report
-```
-
+npm run report.
 Run intentional failure tests for defect evidence:
-
-```bash
 npm run test:defects
-```
-
-## Project Structure
-
-```txt
-automationexercise-playwright-sqa-framework/
-├── pages/
-├── tests/
-│   ├── ui/
-│   ├── api/
-│   └── defect-demo/
-├── fixtures/
-├── utils/
-├── test-artifacts/
-├── playwright.config.ts
-├── package.json
-└── .github/workflows/playwright.yml
-```
-
-## CV Bullet
-
-Built a hybrid UI/API SQA automation framework using Playwright, TypeScript, and Page Object Model for an e-commerce practice application, covering 43 automated test executions across Chromium, Firefox, and API projects, with reusable fixtures, API-based test data setup/cleanup, smoke/regression tagging, HTML reports, screenshots/videos/traces on failure, defect evidence tests, QA documentation, and GitHub Actions CI.
->>>>>>> 66a3b74 (Initial commit: Add Playwright automation framework)
+``
